@@ -47,7 +47,7 @@ h1{
     font-size: 60px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
-    background-color: rgb(2, 2, 32)
+    background-image: linear-gradient(to right, rgb(2, 2, 32), rgb(126, 126, 245 ))
 }
 
 h2{
@@ -78,7 +78,8 @@ ul li{
     color: white;
     text-align: center;
     line-height: 2;
-    background-color: rgb(2, 2, 32)
+    background-image: linear-gradient(to left, rgb(2, 2, 32), rgb(126, 126, 245 ))
+    
 }
 
 img {
@@ -183,6 +184,7 @@ img {
     display: flex;
     justify-content: center;
     align-content: center;
+    transform: rotate(-3deg);
 }
 
 .picture {
@@ -238,6 +240,7 @@ img {
     padding: 30px;
     border: solid 5px rgb(88, 88, 248);
     position: relative;
+    
 }
 
 .card__imagen {
@@ -288,7 +291,7 @@ img {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin-top: 25px;
     text-align: center;
-    color:rgb(2, 2, 32);
+    background-color: beige;
     line-height: 2;
 
 }
