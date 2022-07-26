@@ -180,6 +180,17 @@ img {
 
 }
 
+.pieDePagina2 {
+    background-color: rgb(88, 88, 248);
+    list-style-type: none;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+
 .fotukis {
     display: flex;
     justify-content: center;
