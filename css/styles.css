@@ -168,7 +168,7 @@ img {
     background-color: rgb(88, 88, 248);
     list-style-type: none;
     text-align: center;
-    position: fixed;
+    /**position: fixed;**/
     left: 0;
     bottom: 0;
     width: 100%;
@@ -306,6 +306,7 @@ img {
 
 legend {
     text-align: center;
+    font-size: medium;
 }
 
 /**vista mobile contacto **/
@@ -332,6 +333,11 @@ legend {
     grid-area: galeria;
 
 }
+
+.pieDePagina {
+    grid-area: pieDePagina;
+}
+
 
 .fix {
     display: flex;
@@ -375,3 +381,13 @@ legend {
 }
 
 /**fin vista desktop contacto **/
+
+#carouselExampleControls {
+    margin: 0 auto;
+    
+}
+
+.foti {
+    border-radius: 10px;
+}
+
