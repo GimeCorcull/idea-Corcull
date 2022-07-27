@@ -232,19 +232,25 @@ img {
 
 /** Fin vista Desktop Servicios **/
 
-
-.card__integrantes{
-    display: flex;
-    gap: 5px;
-    flex-flow: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
+.card-img-top {
+    width: 250px;
+    height: 400px;
+    
 }
 
 
-.card {
-    background-color: rgb(41, 6, 6);
+/**.card__integrantes{
+    display: flex;
+    gap: 5px;
+    flex-flow: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}**/
+
+
+/**.card {
+    background-color: rgb(245, 249, 250);
     width: 500px;
     height: 600px;
     margin: 30px;
@@ -283,9 +289,9 @@ img {
     font-style: italic;
     text-align: center;
     
-}
+}**/
 
-.card__parrafo--fundador {
+/**.card__parrafo--fundador {
     position: absolute;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
@@ -295,7 +301,7 @@ img {
     top: 0;
     left: 500px;
     width: 120px;
-}
+}**/
 
 
 .trabajaconnosotros {
