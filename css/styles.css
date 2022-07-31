@@ -3,6 +3,8 @@
    padding: 0%;
 }
 
+
+
 /** vista mobile index **/
 
 #indexGrid {
@@ -232,11 +234,25 @@ img {
 
 /** Fin vista Desktop Servicios **/
 
-.card-img-top {
-    width: 250px;
-    height: 400px;
+.card {
+    display: flex;
+    align-items: center;
+    border: solid rgb(126, 126, 245 )
     
 }
+
+.card-img-top {
+    width: 250px;
+    height: 250px;
+    
+}
+
+.card-body {
+    font-size: small;
+    text-align: center;
+}
+
+
 
 
 /**.card__integrantes{
@@ -407,4 +423,3 @@ legend {
 .foti {
     border-radius: 10px;
 }
-
