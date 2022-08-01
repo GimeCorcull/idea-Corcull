@@ -7,7 +7,7 @@
 
 /** vista mobile index **/
 
-#indexGrid {
+/**#indexGrid {
     display: grid;
     grid-template-areas: 
     "encabezado"
@@ -40,7 +40,7 @@ a {
     text-decoration: none;
     color: white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
+}**/
 
 h1{
     color: white;
@@ -67,11 +67,11 @@ ul li{
     color: rgb(126, 126, 245);   
 }
 
-.listaNavegacion li{
+/**.listaNavegacion li{
     list-style-type: none;
     display: inline-block;
     margin-right: 30px;
-}
+}**/
 
 
 .introduccion {
@@ -423,3 +423,5 @@ legend {
 .foti {
     border-radius: 10px;
 }
+
+
