@@ -7,7 +7,7 @@
 
 /** vista mobile index **/
 
-/**#indexGrid {
+#indexGrid {
     display: grid;
     grid-template-areas: 
     "encabezado"
@@ -27,20 +27,21 @@
     grid-area: pieDePagina;
 }
 
-.listaNavegacion {
+/**.listaNavegacion {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: rgb(88, 88, 248);   
-} 
+} **/
 
 
 a {
     text-decoration: none;
     color: white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}**/
+    list-style-type: none;
+}
 
 h1{
     color: white;
@@ -179,11 +180,13 @@ img {
 
 .piepag li {
     list-style-type: none;
+    text-decoration: none;
 
 }
 
 .pieDePagina2 {
     background-color: rgb(88, 88, 248);
+    color: white;
     list-style-type: none;
     text-align: center;
     position: fixed;
@@ -209,7 +212,7 @@ img {
 /** Vista Desktop Servicios **/
 
 
-@media (min-width: 1024px) {
+/**@media (min-width: 1024px) {
     #nuestrosServicios {
         display: grid;
         grid-template-areas: 
@@ -229,7 +232,7 @@ img {
     }
 
     
-}
+}**/
 
 
 /** Fin vista Desktop Servicios **/
@@ -389,7 +392,7 @@ legend {
 
 /** vista desktop contacto **/
 
-@media (min-width: 1024px) {
+/**@media (min-width: 1024px) {
     #contactoGrid {
         display: grid;
         grid-template-areas: 
@@ -411,7 +414,7 @@ legend {
         grid-template-columns: repeat(3, 1fr);
     }
     
-}
+}**/
 
 /**fin vista desktop contacto **/
 
