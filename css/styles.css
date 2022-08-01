@@ -96,7 +96,7 @@ img {
  
 /** Vista Desktop index **/
 
-@media (min-width: 1024px) {
+/**@media (min-width: 1024px) {
     #gridIndex {
         grid-template-areas: 
         "encabezado encabezado encabezado"
@@ -111,7 +111,7 @@ img {
     }
 
     
-}   
+}   **/
     
 /**Fin Vista Desktop Index **/   
 
