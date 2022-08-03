@@ -1,0 +1,41 @@
+#detalledeservicios {
+    h3{margin-top: 40px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        
+    }
+}
+
+.listaDeServicios {
+    li {
+        list-style-type: none;
+        text-align: center;
+        font-size: large;
+
+    }
+}
+
+.ss {
+    li {
+        color: white;
+        margin-left: 50px;
+        margin-top: 15px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+}
+
+.pieDePagina2{
+    ul {
+        li {
+            color: rgb(126, 126, 245);
+
+            a {
+                text-decoration: none;
+                color: white;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                list-style-type: none;
+            }
+
+        }
+    }
+}
+
+@import "trabajaconnosotros";
