@@ -39,3 +39,14 @@
 }
 
 @import "trabajaconnosotros";
+
+h2{
+    color: rgb(88, 88, 248);
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.h2contacto {
+    @extend h2;
+    color: rgb(2, 2, 32)
+}
