@@ -34,6 +34,7 @@
   line-height: 2;
 }
 
+/**extend**/
 h2, .h2contacto {
   color: rgb(88, 88, 248);
   text-align: center;
@@ -42,6 +43,15 @@ h2, .h2contacto {
 
 .h2contacto {
   color: rgb(2, 2, 32);
+}
+
+/**mixins sin parametro**/
+.containerInputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */
@@ -380,13 +390,13 @@ h2, .h2contacto {
  
  }
  
- .containerInputs {
+ /**.containerInputs {
      display: flex;
      flex-direction: column;
      justify-content: center;
      align-items: center;
      margin-top: 10px;
- }
+ }**/
  
  legend {
      text-align: center;

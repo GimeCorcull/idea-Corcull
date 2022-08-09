@@ -50,3 +50,16 @@ h2{
     @extend h2;
     color: rgb(2, 2, 32)
 }
+
+@mixin flex-column-center {
+    display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin-top: 10px;
+}
+
+.containerInputs {
+    @include flex-column-center;
+
+}
