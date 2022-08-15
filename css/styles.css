@@ -121,6 +121,9 @@ h2, .h2contacto {
      margin-top: 40px;
      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
  }
+
+
+
  
  ul li{
      color: rgb(126, 126, 245);   
@@ -139,8 +142,7 @@ h2, .h2contacto {
      color: white;
      text-align: center;
      line-height: 2;
-     background-image: linear-gradient(to left, rgb(2, 2, 32), rgb(126, 126, 245 ))
-     
+     background-color: rgb(2, 2, 32);     
  }
  
  img {
@@ -226,13 +228,14 @@ h2, .h2contacto {
  
  
  .pieDePagina {
-     background-color: rgb(88, 88, 248);
+     background-color:  rgb(88, 88, 248);
+     color: white;
      list-style-type: none;
      text-align: center;
-     /**position: fixed;**/
+     /**position: fixed;
      left: 0;
      bottom: 0;
-     width: 100%;
+     width: 100%;**/
      
  }
  
@@ -299,22 +302,44 @@ h2, .h2contacto {
  .card {
      display: flex;
      align-items: center;
-     border: solid rgb(126, 126, 245 )
-     
- }
+     border: solid rgb(2, 2, 32 ); 
+     background-image: linear-gradient(to bottom, white, rgb(126, 126, 245 ));
+
+
+    }
  
  .card-img-top {
-     width: 250px;
-     height: 250px;
+     width: 300px;
+     height: 300px;
+     padding-top: 25px;
      
  }
  
  .card-body {
-     font-size: small;
+     font-size: medium;
      text-align: center;
+     color: rgb(2, 2, 32);
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     
+ }
+
+ .equipo {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    margin-bottom: 30px;
  }
  
- 
+ .newsletter {
+    margin-top: 50px;
+    text-align: left;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ }
+
+ h4 {
+    font-weight: bolder;
+
+ }
  
  
  /**.card__integrantes{
@@ -486,5 +511,11 @@ h2, .h2contacto {
      border-radius: 10px;
  }
  
- 
+.ubicacion {
+    color: rgb(2, 2, 32);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
  
