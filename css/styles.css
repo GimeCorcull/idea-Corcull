@@ -18,6 +18,7 @@
 
 .pieDePagina2 ul li {
   color: rgb(126, 126, 245);
+  list-style: none;
 }
 .pieDePagina2 ul li a {
   text-decoration: none;
@@ -77,8 +78,11 @@ h2, .h2contacto {
      grid-area: encabezado;
  }
  
- .intro {
-     grid-area: intro;
+ .intro { 
+    grid-area: intro;
+    background-image: linear-gradient(to right, rgb(2, 2, 32), rgb(126, 126, 245 ))
+    
+    
  }
  
  .pieDePagina {
@@ -142,7 +146,8 @@ h2, .h2contacto {
      color: white;
      text-align: center;
      line-height: 2;
-     background-color: rgb(2, 2, 32);     
+     background-color: rgb(2, 2, 32);  
+     padding: 30px 0;
  }
  
  img {
@@ -201,8 +206,11 @@ h2, .h2contacto {
  #detalleDeServicios {
      grid-area: detalleDeServicios;
      text-align: left;
+     padding-left: 15px;
      color: white;
-     background-color: rgb(2, 2, 32)
+     background-color: rgb(2, 2, 32);
+     padding-bottom: 40px; 
+     
  }
  
  .pieDePagina {
@@ -250,10 +258,10 @@ h2, .h2contacto {
      color: white;
      list-style-type: none;
      text-align: center;
-     position: fixed;
+     /**position: fixed;
      left: 0;
      bottom: 0;
-     width: 100%;
+     width: 100%;**/
  }
  
  
@@ -261,12 +269,13 @@ h2, .h2contacto {
      display: flex;
      justify-content: center;
      align-content: center;
-     transform: rotate(-3deg);
+     
+    
  }
  
  .picture {
-     width:100%;
-     height: 80%;
+     width:70%;
+     height: 60%;
  }
  
  /** Fin vista mobile servicios **/
@@ -520,3 +529,22 @@ h2, .h2contacto {
     text-align: center;
 }
  
+.carousel-control-next-icon {
+    background-color: gray
+}
+.carousel-control-prev-icon {
+    background-color: gray;
+}
+
+.logoFc {
+    width: 70px;
+    height: 60px;
+    border-radius: 50px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(126, 126, 245 );
+    padding: 10px;
+}
