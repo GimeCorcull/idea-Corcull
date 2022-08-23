@@ -72,6 +72,7 @@ h2, .h2contacto {
      "encabezado"
      "intro"
      "pieDePagina";
+     background-color: rgb(2, 2, 32 );
  }
  
  .encabezado {
@@ -238,12 +239,12 @@ h2, .h2contacto {
  .pieDePagina {
      background-color:  rgb(88, 88, 248);
      color: white;
-     list-style-type: none;
      text-align: center;
-     /**position: fixed;
+    /** position: fixed;
      left: 0;
      bottom: 0;
      width: 100%;**/
+    
      
  }
  
@@ -258,6 +259,7 @@ h2, .h2contacto {
      color: white;
      list-style-type: none;
      text-align: center;
+     
      /**position: fixed;
      left: 0;
      bottom: 0;
@@ -537,8 +539,8 @@ h2, .h2contacto {
 }
 
 .logoFc {
-    width: 70px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 50px;
 }
 
@@ -546,5 +548,14 @@ header {
     display: flex;
     justify-content: space-between;
     background-color: rgb(126, 126, 245 );
-    padding: 10px;
+    padding: 20px;
+    font-size: larger;
+}
+
+.piepag {
+    display: flex;
+    justify-content: end;
+    gap: 25px;
+    background-color: rgb(2, 2, 32 );
+    
 }
