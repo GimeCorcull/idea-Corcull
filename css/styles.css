@@ -16,7 +16,7 @@
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
-.pieDePagina2 ul li {
+/**.pieDePagina2 ul li {
   color: rgb(126, 126, 245);
   list-style: none;
 }
@@ -25,13 +25,15 @@
   color: white;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   list-style-type: none;
-}
+}**/
 
 .trabajaconnosotros p {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   margin-top: 25px;
+  font-size: large;
   text-align: center;
-  background-color: beige;
+  background-color: rgb(2, 2, 32 );
+  color: white;
   line-height: 2;
 }
 
@@ -49,10 +51,13 @@ h2, .h2contacto {
 /**mixins sin parametro**/
 .containerInputs {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   margin-top: 10px;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: larger;
 }
 
 /*# sourceMappingURL=styles.css.map */
@@ -125,6 +130,7 @@ h2, .h2contacto {
  h3{
      margin-top: 40px;
      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     color: white;
  }
 
 
@@ -157,7 +163,8 @@ h2, .h2contacto {
  
  .googlemaps {
      display: flex;
-     justify-content: center; 
+     justify-content: center;
+     padding-right: 150px; 
  }
   
  /** Vista Desktop index **/
@@ -237,9 +244,12 @@ h2, .h2contacto {
  
  
  .pieDePagina {
-     background-color:  rgb(88, 88, 248);
-     color: white;
+     color: rgb(126, 126, 245 );
      text-align: center;
+     margin-top: 5px;
+     
+     
+    
     /** position: fixed;
      left: 0;
      bottom: 0;
@@ -248,13 +258,13 @@ h2, .h2contacto {
      
  }
  
- .piepag li {
+ .redes li {
      list-style-type: none;
      text-decoration: none;
  
  }
  
- .pieDePagina2 {
+ /**.pieDePagina2 {
      background-color: rgb(88, 88, 248);
      color: white;
      list-style-type: none;
@@ -263,17 +273,15 @@ h2, .h2contacto {
      /**position: fixed;
      left: 0;
      bottom: 0;
-     width: 100%;**/
- }
- 
+     width: 100%;
+ }**/
+
  
  .fotukis {
      display: flex;
      justify-content: center;
      align-content: center;
-     
-    
- }
+    }
  
  .picture {
      width:70%;
@@ -343,8 +351,12 @@ h2, .h2contacto {
  
  .newsletter {
     margin-top: 50px;
+    margin-bottom: 50px;
     text-align: left;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 5px 30px;
+    color: white;
+    ;
  }
 
  h4 {
@@ -422,22 +434,24 @@ h2, .h2contacto {
      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
      margin-top: 25px;
      text-align: center;
-     background-color: beige;
+     background-color: rgb(2, 2, 32 );
      line-height: 2;
  
  }
  
- *.containerInputs {
+ .containerInputs {
      display: flex;
      flex-direction: column;
      justify-content: center;
      align-items: center;
-     margin-top: 10px;
+     margin-top: 25px;
  }
  
  legend {
      text-align: center;
      font-size: medium;
+     color: white;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
  }
  
  /**vista mobile contacto **/
@@ -519,11 +533,15 @@ h2, .h2contacto {
  }
  
  .foti {
-     border-radius: 10px;
+     border-radius: 20px;
+    
  }
  
 .ubicacion {
-    color: rgb(2, 2, 32);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: large;
     margin-top: 50px;
@@ -547,16 +565,34 @@ h2, .h2contacto {
 header {
     display: flex;
     justify-content: space-between;
+    padding: 5px 15px;
     background-color: rgb(126, 126, 245 );
-    padding: 20px;
     font-size: larger;
 }
 
-.piepag {
+.redes {
     display: flex;
-    justify-content: end;
+    justify-content: center;
     gap: 10px;
     margin-right: 15px;
-    
-    
+       
+}
+
+
+
+.fondo {
+    background-color: rgb(2, 2, 32 );
+}
+
+.horizontalizar {
+    display: flex;
+}
+
+.blue {
+    background-color: rgb(2, 2, 32 );
+}
+
+.domicilio {
+    padding-left: 30px;
+    margin-right: 50px;
 }
