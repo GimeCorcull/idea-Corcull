@@ -16,16 +16,6 @@
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
-/**.pieDePagina2 ul li {
-  color: rgb(126, 126, 245);
-  list-style: none;
-}
-.pieDePagina2 ul li a {
-  text-decoration: none;
-  color: white;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  list-style-type: none;
-}**/
 
 .trabajaconnosotros p {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -45,7 +35,8 @@ h2, .h2contacto {
 }
 
 .h2contacto {
-  color: rgb(2, 2, 32);
+  color: white;
+  margin-bottom: 55px;
 }
 
 /**mixins sin parametro**/
@@ -54,7 +45,8 @@ h2, .h2contacto {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
+  margin-top:30px;
+  gap: 15px;
   color: white;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: larger;
@@ -66,7 +58,6 @@ h2, .h2contacto {
     margin: 0%;
     padding: 0%;
  }
- 
  
  
  /** vista mobile index **/
@@ -95,14 +86,7 @@ h2, .h2contacto {
      grid-area: pieDePagina;
  }
  
- /**.listaNavegacion {
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-     background-color: rgb(88, 88, 248);   
- } **/
- 
+
  
  a {
      text-decoration: none;
@@ -140,11 +124,7 @@ h2, .h2contacto {
      color: rgb(126, 126, 245);   
  }
  
- /**.listaNavegacion li{
-     list-style-type: none;
-     display: inline-block;
-     margin-right: 30px;
- }**/
+
  
  
  .introduccion {
@@ -160,6 +140,27 @@ h2, .h2contacto {
  img {
      max-width: 100%;
  }
+
+ .carousel-control-next-icon {
+    background-color: gray
+}
+.carousel-control-prev-icon {
+    background-color: gray;
+}
+
+.logoFc {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 15px;
+    background-color: rgb(126, 126, 245 );
+    font-size: larger;
+}
  
  .googlemaps {
      display: flex;
@@ -198,6 +199,7 @@ h2, .h2contacto {
      "encabezado"
      "enumeracion"
      "detalleDeServicios"
+     "redes"
      "footer";
  }
  
@@ -219,6 +221,10 @@ h2, .h2contacto {
      background-color: rgb(2, 2, 32);
      padding-bottom: 40px; 
      
+ }
+
+ .redes {
+    grid-area: redes;
  }
  
  .pieDePagina {
@@ -364,71 +370,7 @@ h2, .h2contacto {
 
  }
  
- 
- /**.card__integrantes{
-     display: flex;
-     gap: 5px;
-     flex-flow: row;
-     flex-wrap: wrap;
-     align-items: center;
-     justify-content: space-around;
- }**/
- 
- 
- /**.card {
-     background-color: rgb(245, 249, 250);
-     width: 500px;
-     height: 600px;
-     margin: 30px;
-     padding: 30px;
-     border: solid 5px rgb(88, 88, 248);
-     position: relative;
-     
- }
- 
- .card__imagen {
-     display: block;
-     width: 250px; 
-     height: 270px;
-     margin: 0 auto;
- 
- }
- 
- .card__parrafo{
-     color: white;
-     font-size: 40px;
-     font-style:normal;
-     font-weight: bolder;
-     text-align: center;
- }
- 
- .card__parrafo--descripcion {
-     color: white;
-     font-style: italic;
-     font-size: 20px;
-     text-align: center;
- }
- 
- .card__parrafo--descripcion2 {
-     color: white;
-     font-size: 20px;
-     font-style: italic;
-     text-align: center;
-     
- }**/
- 
- /**.card__parrafo--fundador {
-     position: absolute;
-     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-     text-align: center;
-     color: rgb(41, 6, 6);
-     background-color: rgb(88, 88, 248);
-     border: solid 2px;
-     top: 0;
-     left: 500px;
-     width: 120px;
- }**/
- 
+
  
  .trabajaconnosotros {
      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -439,29 +381,31 @@ h2, .h2contacto {
  
  }
  
- .containerInputs {
+ /**.containerInputs {
      display: flex;
-     flex-direction: column;
-     justify-content: center;
+     flex-direction: row;
+     justify-content: space-evenly;
      align-items: center;
      margin-top: 25px;
- }
+ }**/
  
  legend {
      text-align: center;
-     font-size: medium;
      color: white;
+     font-size: 15px;
      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
  }
  
  /**vista mobile contacto **/
- #contactoGrid {
+ 
+ /**#contactoGrid {
  
      display: grid;
      grid-template-areas: 
      "encabezado"
      "formulario"
-     "galeria"
+     "ubicacion"
+     "redes"
      "pieDePagina";
      
  }
@@ -473,32 +417,34 @@ h2, .h2contacto {
  .formulario {
      grid-area: formulario;
  }
- 
- .galeria {
-     grid-area: galeria;
- 
+
+ .ubicacion {
+    grid-area: ubicacion;
  }
+
+ .redes {
+    grid-area: redes;
+ }
+ 
  
  .pieDePagina {
      grid-area: pieDePagina;
- }
+ }**/
  
  
- .fix {
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-     gap: 30px;
- }
- 
- .pieDePagina {
-     grid-area: pieDePagina;
- }
+
+
  
  
  /** fin vista mobile contacto **/
- 
+ .fix {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
  /** vista desktop contacto **/
  
  /**@media (min-width: 1024px) {
@@ -549,32 +495,15 @@ h2, .h2contacto {
     text-align: center;
 }
  
-.carousel-control-next-icon {
-    background-color: gray
-}
-.carousel-control-prev-icon {
-    background-color: gray;
-}
 
-.logoFc {
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 5px 15px;
-    background-color: rgb(126, 126, 245 );
-    font-size: larger;
-}
 
 .redes {
     display: flex;
     justify-content: center;
     gap: 10px;
     margin-right: 15px;
+    margin-top: 35px;
+    
        
 }
 
@@ -584,9 +513,7 @@ header {
     background-color: rgb(2, 2, 32 );
 }
 
-.horizontalizar {
-    display: flex;
-}
+
 
 .blue {
     background-color: rgb(2, 2, 32 );
@@ -595,4 +522,33 @@ header {
 .domicilio {
     padding-left: 30px;
     margin-right: 50px;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+    text-align: center;
 }
+
+
+.contactoJ {
+    padding: 5px
+}
+.contactoL {
+     padding: 5px;
+}
+.contactoP {
+    padding: 5px;
+}
+
+fieldset {
+    background-color: rgb(126, 126, 245 );
+}
+
+/**.marco {
+    border: solid white;
+    margin: 30px 200px;
+}**/
+
+/**.datosFormulario {
+    text-align: center;
+    
+}**/
