@@ -1,4 +1,4 @@
-/**algunas aplicaciones de Sass  **/
+/**Algunas aplicaciones de Sass  **/
 
 #detalledeservicios h3 {
   margin-top: 40px;
@@ -149,9 +149,7 @@ h2, .h2contacto {
      max-width: 100%;
  }
 
- .carousel-control-next-icon {
-    background-color: gray
-}
+.carousel-control-next-icon, 
 .carousel-control-prev-icon {
     background-color: gray;
 }
@@ -183,32 +181,10 @@ header {
     margin: 35px, 15px, 0px, 0px;
     
 }
- 
 
-/** Vista Desktop index **/
- 
- /**@media (min-width: 768px) {
-     #gridIndex {
-         grid-template-areas: 
-         "encabezado encabezado encabezado"
-         "intro intro intro"
-         "pieDePagina pieDePagina pieDePagina";
-        }        
-
-          **/
-     
- /**Fin Vista Desktop Index **/   
- 
-
-
-
-
- 
 /**SERVICIOS**/
  
- /** Vista Mobile Servicios**/
- 
- #nuestrosServicios {
+#nuestrosServicios {
      display: grid;
      grid-template-areas: 
      "encabezado"
@@ -216,55 +192,47 @@ header {
      "detalleDeServicios"
      "redes"
      "footer";
- }
+}
  
  .encabezado {
-     grid-area: encabezado;
-     
- }
+     grid-area: encabezado;    
+}
  
- .enumeracion {
+.enumeracion {
      grid-area: enumeracion;
  }
  
- 
- #detalleDeServicios {
+#detalleDeServicios {
      grid-area: detalleDeServicios;
      text-align: left;
      padding-left: 25px;
      color: white;
      background-color: rgb(2, 2, 32);
      padding-bottom: 40px; 
-     
- }
+}
 
  .redes {
     grid-area: redes;
- }
+}
  
- .pieDePagina {
+.pieDePagina {
      grid-area: pieDePagina;
- }
+}
  
- 
- .listaDeServicios {
+.listaDeServicios {
      list-style-type: none;
      text-align: center;
      font-size: large;
- }
+}
  
- 
- 
- .ss li{
+.ss li{
      color: white;
      margin: 15px, 0px, 10px, 20px;
      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman';
      font-size: large;
- }
+}
  
- 
- 
- .pieDePagina {
+.pieDePagina {
      color: rgb(126, 126, 245 );
      text-align: center;
      margin-top: 5px; 
@@ -273,95 +241,60 @@ header {
 .redes li {
      list-style-type: none;
      text-decoration: none;
+     padding-top: 5%;
  
- }
+}
  
- .fotukis {
+.fotukis {
      display: flex;
      justify-content: center;
-     align-content: center;
-    }
+     align-content: center; 
+}
  
  .picture {
      width:70%;
      height: 60%;
      border-radius: 15%;
- }
-
- .fondo {
-    background-color: rgb(2, 2, 32 );
 }
 
-
- /** Fin vista mobile servicios **/
- 
-
- /** Vista Desktop Servicios **/
- 
- 
- /**@media (min-width: 1024px) {
-     #nuestrosServicios {
-         display: grid;
-         grid-template-areas: 
-         "encabezado encabezado encabezado encabezado"
-         "enumeracion enumeracion enumeracion enumeracion"
-         "detalleDeServicios detalleDeServicios detalleDeServicios detalleDeServicios"
-         "footer footer footer footer";
- 
- 
-     }
-
-     
- }**/
- 
- 
- /** Fin vista Desktop Servicios **/
-
-
-
-
-
-
-
-
-
+.fondo {
+    background-color: rgb(2, 2, 32 );
+}
  
 /** NUESTRO EQUIPO **/
 
- .card {
+.card {
      display: flex;
      align-items: center;
      border: solid rgb(2, 2, 32 ); 
      background-image: linear-gradient(to bottom, white, rgb(126, 126, 245 ));
-
-
-    }
+}
  
- .card-img-top {
+.card-img-top {
      width: 300px;
      height: 300px;
-     padding-top: 25px;
-     
- }
+     padding-top: 25px;    
+}
  
- .card-body {
+.card-body {
      font-size: medium;
      text-align: center;
      color: rgb(2, 2, 32);
      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-     
- }
+}
 
- .equipo {
+.equipo {
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bolder;
     margin-bottom: 30px;
- }
+}
 
-
-
-
+.contactoJ,
+.contactoL,
+.contactoP {
+    padding: 5px;
+}
 
 
  /**TRABAJÁ CON NOSOTROS**/
@@ -372,7 +305,6 @@ header {
     text-align: center;
     background-color: rgb(2, 2, 32 );
     line-height: 2;
-
 }
  
  .newsletter {
@@ -382,52 +314,42 @@ header {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding: 5px 30px;
     color: white;
-    
- }
+}
 
  h4 {
     font-weight: bolder;
-
- }
+}
  
- .foti {
+.foti {
     border-radius: 20px;
     max-width: 90%;
-   
 }
-
-.contactoJ {
-    padding: 5px
-}
-.contactoL {
-     padding: 5px;
-}
-.contactoP {
-    padding: 5px;
-}
-
 
 .botonNewsletter {
     padding: 5px 5px;
-
 }
-
 
 
 /** CONTACTO**/ 
 
-legend {
-    text-align: center;
-    color: white;
-    font-size: 15px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+.blue {
+    background-color: rgb(2, 2, 32 );
+}
+
+form {
+    width: 70%;
+    margin: 0 auto;
 }
 
 .marco {
-    /**background-color: rgb(126, 126, 245 );**/
     border: solid white;
-    margin: 30px 150px;
     background-image: url(../img/4.jpg);
+}
+
+.datosFormulario {
+    text-align: center;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .containerInputs {
@@ -436,104 +358,35 @@ legend {
     justify-content: space-evenly;
     align-items: center;
     margin-top: 25px;
-}
-
-
-.domicilio {
-    padding-left: 30px;
-    margin-right: 50px;
-    color: white;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: large;
-    text-align: center;
-}
-
-/**.googlemaps {
-    margin-left: auto;
-    margin-right: auto;
-}**/
- 
-
- 
-
-
-
-
-
-
-
- 
- /**vista mobile contacto **/
- 
- #contactoGrid {
- 
-     display: grid;
-     grid-template-areas: 
-     "encabezado"
-     "formulario"
-     "ubicacion"
-     "redes"
-     "pieDePagina";
-     grid-template-columns: 1fr;
- }
- 
-.encabezado {
-     grid-area: encabezado;
- }
- 
- .formulario {
-     grid-area: formulario;
- }
-
- .ubicacion {
-    grid-area: ubicacion;
- }
-
- .redes {
-    grid-area: redes;
- }
- 
- 
- .pieDePagina {
-     grid-area: pieDePagina;
- }
- 
-
- @media screen and (max-width: 768px) {
-    #contactoGrid {
-        width: 100%;
-
-    }
-    
-}
- 
-/**.ubicacion {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    color: white;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: large;
-    margin-top: 50px;
-    margin-bottom: 80px;
-    text-align: center;
-}**/
- 
-.blue {
-    background-color: rgb(2, 2, 32 );
+    font-size: medium;
 }
 
 .ubicacion {
     display: flex;
+    flex-direction: column;
     align-items: center;
     padding-right: 11%;
     padding-left: 11%;
     margin-bottom: 5%; 
 }
 
-iframe {
-    border-radius: 20px;
+@media (min-width: 768px) {
+    .ubicacion{
+        flex-direction: row;
+    }    
 }
 
+iframe {
+    border-radius: 20px;
+    max-width: 100%;
+}
 
+.domicilio {
+    padding-left: 5%;
+    margin-right: auto;
+    margin-top: 55px;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+    text-align: center;
+}
