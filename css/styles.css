@@ -13,9 +13,10 @@
 
 .ss li {
   color: white;
-  margin-left: 50px;
+  padding-right: 15px;
   margin-top: 15px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-align: justify;
 }
 
 
@@ -179,10 +180,8 @@ header {
     display: flex;
     justify-content: center;
     gap: 10px;
-    margin-right: 15px;
-    margin-top: 35px;
+    margin: 35px, 15px, 0px, 0px;
     
-       
 }
  
 
@@ -232,7 +231,7 @@ header {
  #detalleDeServicios {
      grid-area: detalleDeServicios;
      text-align: left;
-     padding-left: 15px;
+     padding-left: 25px;
      color: white;
      background-color: rgb(2, 2, 32);
      padding-bottom: 40px; 
@@ -258,9 +257,9 @@ header {
  
  .ss li{
      color: white;
-     margin-left: 50px;
-     margin-top: 15px;
-     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     margin: 15px, 0px, 10px, 20px;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman';
+     font-size: large;
  }
  
  
@@ -286,6 +285,7 @@ header {
  .picture {
      width:70%;
      height: 60%;
+     border-radius: 15%;
  }
 
  .fondo {
@@ -392,6 +392,7 @@ header {
  
  .foti {
     border-radius: 20px;
+    max-width: 90%;
    
 }
 
@@ -406,7 +407,10 @@ header {
 }
 
 
+.botonNewsletter {
+    padding: 5px 5px;
 
+}
 
 
 
@@ -420,9 +424,10 @@ legend {
 }
 
 .marco {
-    background-color: rgb(126, 126, 245 );
+    /**background-color: rgb(126, 126, 245 );**/
     border: solid white;
     margin: 30px 150px;
+    background-image: url(../img/4.jpg);
 }
 
 .containerInputs {
@@ -469,7 +474,7 @@ legend {
      "ubicacion"
      "redes"
      "pieDePagina";
-     
+     grid-template-columns: 1fr;
  }
  
 .encabezado {
@@ -494,6 +499,13 @@ legend {
  }
  
 
+ @media screen and (max-width: 768px) {
+    #contactoGrid {
+        width: 100%;
+
+    }
+    
+}
  
 /**.ubicacion {
     display: flex;
@@ -513,7 +525,15 @@ legend {
 }
 
 .ubicacion {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    align-items: center;
+    padding-right: 11%;
+    padding-left: 11%;
+    margin-bottom: 5%; 
 }
+
+iframe {
+    border-radius: 20px;
+}
+
+
